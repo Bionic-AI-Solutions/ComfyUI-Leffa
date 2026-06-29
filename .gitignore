@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+# model weights are staged to /mnt/ai-models, never committed
+models/
+ckpts/
+*.pth
+*.pkl
+*.onnx
+*.safetensors

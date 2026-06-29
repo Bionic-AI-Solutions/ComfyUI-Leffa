@@ -1,0 +1,27 @@
+# Runtime deps for ComfyUI-Leffa that are NOT part of ComfyUI core.
+# torch / torchvision / transformers / safetensors / einops / numpy / Pillow /
+# scipy / tqdm / psutil are provided by the ComfyUI (wan22) environment and must
+# NOT be upgraded here — see base-image-dep-pins.
+#
+# Leffa diffusion stack
+diffusers>=0.25.0
+accelerate
+peft
+# detectron2 / densepose (vendored source) runtime deps
+fvcore
+omegaconf
+cloudpickle
+pycocotools
+termcolor
+tabulate
+# human-parsing (onnx, CPU) + openpose
+onnx
+onnxruntime
+opencv-python-headless
+scikit-image
+timm
+# misc used by leffa_utils / preprocess
+matplotlib
+imageio
+av
+regex==2024.5.15
