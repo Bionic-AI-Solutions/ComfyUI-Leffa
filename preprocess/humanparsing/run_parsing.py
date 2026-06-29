@@ -4,7 +4,7 @@ import sys
 import onnxruntime as ort
 PROJECT_ROOT = Path(__file__).absolute().parents[0].absolute()
 sys.path.insert(0, str(PROJECT_ROOT))
-from parsing_api import onnx_inference
+from preprocess.humanparsing.parsing_api import onnx_inference
 
 
 class Parsing:

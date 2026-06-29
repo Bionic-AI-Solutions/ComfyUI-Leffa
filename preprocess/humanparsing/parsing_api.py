@@ -10,8 +10,8 @@ import numpy as np
 import cv2
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
-from datasets.simple_extractor_dataset import SimpleFolderDataset
-from utils.transforms import transform_logits
+from preprocess.humanparsing.datasets.simple_extractor_dataset import SimpleFolderDataset
+from preprocess.humanparsing.utils.transforms import transform_logits
 from tqdm import tqdm
 from PIL import Image
 
